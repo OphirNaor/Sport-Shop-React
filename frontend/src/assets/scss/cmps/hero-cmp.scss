@@ -1,0 +1,69 @@
+.hero {
+    --hero-image: url('../../img/hero.jpeg');
+    --hero-image-height: 100%;
+    max-height: var(--hero-image-height);
+    position: relative;
+    height: var(--hero-image-height);
+    overflow: hidden;
+    width: 100%;
+
+    .hero__image {
+        background-image: var(--hero-image);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+
+        h2 {
+
+            font-weight: 700;
+            text-align: center;
+            background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+            background-clip: text;
+            color: transparent;
+            font-size: 2.5rem;
+            font-family: "Source Sans Pro", sans-serif;
+            animation: reveal 3000ms ease-in-out forwards 200ms,
+                glow 2500ms linear infinite 2000ms;
+
+            @keyframes reveal {
+                80% {
+                    letter-spacing: 8px;
+                }
+
+                100% {
+                    background-size: 300% 300%;
+                }
+            }
+
+            @keyframes glow {
+                40% {
+                    text-shadow: 0 0 8px #fff;
+                }
+            }
+
+        }
+
+        p {
+            color: rgb(79, 77, 76);
+            // background: #fff;
+            // opacity: .5;
+        }
+    }
+
+    .hero__image-blurred-bg {
+        background-image: var(--hero-image);
+        background-position: center;
+        background-size: cover;
+        height: calc(100% + 40px);
+        filter: blur(10px);
+        left: -20px;
+        position: absolute;
+        top: -20px;
+        width: calc(100% + 40px);
+        z-index: -1;
+    }
+}
+
+h2 {}

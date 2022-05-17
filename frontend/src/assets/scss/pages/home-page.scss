@@ -1,0 +1,35 @@
+.homepage-title {
+    font-size: 1.5rem;
+    color: #171717;
+    margin-bottom: 1rem;
+    margin-left: 8px;
+}
+
+.homepage-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    // width: 15vw;
+
+
+    input {
+        font-size: 1rem;
+        padding: .5rem;
+        margin-top: 15px;
+        width: 30%;
+        border: none;
+        border-bottom: 1px solid black;
+        background-color: #f4f4f4;
+    }
+
+    .search-price {
+        margin-left: 25px;
+        width: 10%;
+        border: 1px solid black;
+    }
+}

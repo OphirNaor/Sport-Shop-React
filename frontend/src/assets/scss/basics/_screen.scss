@@ -1,0 +1,139 @@
+@media screen and (max-width: 1320px) {
+    .cart-page {
+        max-width: 900px;
+    }
+}
+
+
+
+@media screen and (max-width: 1232px) {
+    .homepage-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product {
+        width: 360px;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .navbar-links {
+        display: none;
+
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .product-page {
+        flex-direction: column;
+
+        .productpage-left {
+            flex-direction: column;
+            flex: 1;
+
+            .left-image {
+                flex: 1;
+            }
+
+            .left-info {
+                flex: 1
+            }
+        }
+
+        .productpage-right {
+            flex: 1;
+            padding: 1rem;
+
+            .right-info {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+
+    }
+
+    .cart-page {
+        max-width: 800px;
+        flex-direction: column;
+
+        .cartpage-left {
+            margin: 0;
+        }
+
+        .cartpage-right {
+            margin: 1rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 790px) {
+    .homepage-products {
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        width: 450px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .cartitem-name {
+        font-size: 0.8rem;
+    }
+
+    .cartitem-select,
+    .cartitem-deleteBtn {
+        padding: 8px 13px;
+    }
+
+    .cartitem-price {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+@media screen and (min-width: 960px) {
+    .sidedrawer {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .navbar-logo {
+        font-size: 1rem;
+    }
+
+    .cartitem-name {
+        font-size: 0.6rem;
+    }
+
+    .cartitem-select,
+    .cartitem-deleteBtn {
+        padding: 5px 8px;
+    }
+
+    .cartitem-price {
+        font-size: 0.6rem;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .product {
+        width: 300px;
+    }
+}
