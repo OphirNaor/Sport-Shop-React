@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
 import "./assets/scss/global.scss";
+import Footer from "./components/Footer";
 function App() {
   const [sideToggle, setSideToggle] = useState(false)
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route path="/" component={HomePage} />
         </Switch>
       </main>
+
+      <Footer />
 
     </Router>
   );

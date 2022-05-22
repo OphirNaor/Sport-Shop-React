@@ -37,6 +37,7 @@ const NavBar = ({ click }) => {
                     </Link>
 
                 </li>
+
             </ul>
 
             <div className="hamburger-menu column space-between align-center" onClick={click}>

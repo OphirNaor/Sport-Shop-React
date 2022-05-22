@@ -9,11 +9,19 @@ const HomePage = () => {
     const dispatch = useDispatch();
     const getProducts = useSelector((state) => state.getProducts);
     const { products, loading, error } = getProducts;
-    const [searchTerm, setSearchTerm] = useState("All")
+    const [searchTerm, setSearchTerm] = useState("");
+    const [data, setData] = useState([]);
+    const [filter, setFilter] = useState(data)
 
     useEffect(() => {
         dispatch(listProducts())
     }, [dispatch])
+
+    const filterProduct = (cat) => {
+        const updatedList = data.filter((x) => x.category === cat);
+        setFilter(updatedList);
+    }
+
 
     return (
         <>
@@ -25,6 +33,8 @@ const HomePage = () => {
 
             </div>
             <section className="home-page container">
+                <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("men's clothing")}>Men's Clothing</button>
+
                 <h2 className="homepage-title">Latest Products</h2>
 
                 <div className="homepage-products">
@@ -37,7 +47,6 @@ const HomePage = () => {
                             if (searchTerm == "") {
                                 return val;
                             } else {
-
                                 return (val.name.toLowerCase().includes(searchTerm.toLowerCase()))
                             }
                         }).map((product) => (
@@ -52,6 +61,7 @@ const HomePage = () => {
                         ))
 
                     )}
+
 
                 </div>
             </section>
