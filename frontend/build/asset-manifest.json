@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Sport-Shop-React/static/css/main.d7d59412.css",
+    "main.js": "/Sport-Shop-React/static/js/main.8cad9b8d.js",
+    "static/js/787.b21525af.chunk.js": "/Sport-Shop-React/static/js/787.b21525af.chunk.js",
+    "static/media/hero.jpeg": "/Sport-Shop-React/static/media/hero.a21ea4c1a04280f1de7b.jpeg",
+    "static/media/Lato-Regular.ttf": "/Sport-Shop-React/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/Lato-Bold.ttf": "/Sport-Shop-React/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "index.html": "/Sport-Shop-React/index.html",
+    "main.d7d59412.css.map": "/Sport-Shop-React/static/css/main.d7d59412.css.map",
+    "main.8cad9b8d.js.map": "/Sport-Shop-React/static/js/main.8cad9b8d.js.map",
+    "787.b21525af.chunk.js.map": "/Sport-Shop-React/static/js/787.b21525af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7d59412.css",
+    "static/js/main.8cad9b8d.js"
+  ]
+}
