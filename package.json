@@ -4,19 +4,22 @@
     "start": "node backend/server.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build && cp build/index.html build/404.html",
+    "build": "react-scripts build",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seederScript.js"
   },
   "dependencies": {
+    "buildpack-registry": "^1.0.1",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "gh-pages": "^4.0.0",
     "mongoose": "^6.3.3",
+    "package-lock.json": "^1.0.0",
     "react-icons": "^4.3.1",
-    "react-redux": "^8.0.1"
+    "react-redux": "^8.0.1",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "concurrently": "^7.1.0",
